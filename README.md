@@ -41,8 +41,11 @@ Endpoint
 
 Request Payload
 - JSON object with the following properties:
-`fileName` (string): The name of the file to be saved.
-`buffer` (string): The content of the transcript in a buffer.
+
+| Parameters   | Types        | Description                                |
+|--------------|--------------|--------------------------------------------|
+| `fileName`   | (string)     | The name of the file to be saved.          |
+| `buffer`     | (string)     | The content of the transcript in a buffer. |
 
 Example Request
 

@@ -83,4 +83,4 @@ Example: http://localhost:3000/logs/transcript.txt
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/nikit0/discord-transcript-saver-api?tab=MIT-1-ov-file) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Node.js application serves as a simple API for saving files. It allows users to send a POST request to the `/saveFile` endpoint with the necessary data, and the server will save the provided transcript in the `logs` directory.
+This Node.js application serves as a simple API for saving files. It allows users to send a POST request to the `/saveFile` endpoint with the necessary data, and the server will save the provided file in the `logs` directory.
 Example: You can use this for save your Discord chat transcripts!
 
 ## Getting Started
@@ -16,7 +16,7 @@ Example: You can use this for save your Discord chat transcripts!
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/nikit0/discord-transcript-saver-api.git
+git clone https://github.com/nikit0/save-file-api.git
 ```
 
 2. Install dependencies:
@@ -35,7 +35,7 @@ The server will be running on http://localhost:3000 by default.
 
 ## API Usage
 
-### Save Transcript
+### Save File
 
 Endpoint
 - POST `/saveFile`
@@ -46,16 +46,16 @@ Request Payload
 | Parameters   | Types        | Description                                |
 |--------------|--------------|--------------------------------------------|
 | `fileName`   | (string)     | The name of the file to be saved.          |
-| `buffer`     | (string)     | The content of the transcript in a buffer. |
+| `buffer`     | (string)     | The content of the file in a buffer.       |
 
 Example Request
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"fileName": "transcript.txt", "buffer": "Hello, this is a Discord transcript!"}' http://localhost:3000/saveFile
+curl -X POST -H "Content-Type: application/json" -d '{"fileName": "file.txt", "buffer": "Hello, this is a Save File API!"}' http://localhost:3000/saveFile
 ```
 
 Response
-- If the transcript is successfully saved:
+- If the file is successfully saved:
 
 ```json
 {
@@ -73,8 +73,8 @@ Response
 
 ## Static File Access
 
-Transcripts saved using the API can be accessed directly via the /logs path on the server.
-Example: http://localhost:3000/logs/transcript.txt
+File saved using the API can be accessed directly via the /logs path on the server.
+Example: http://localhost:3000/logs/file.txt
 
 ## Error Handling
 

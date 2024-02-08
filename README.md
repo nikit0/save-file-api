@@ -1,8 +1,9 @@
-# Discord Transcript Saver API
+# Save File API
 
 ## Overview
 
-This Node.js application serves as a simple API for saving Discord chat transcripts. It allows users to send a POST request to the `/saveFile` endpoint with the necessary data, and the server will save the provided transcript in the `logs` directory.
+This Node.js application serves as a simple API for saving files. It allows users to send a POST request to the `/saveFile` endpoint with the necessary data, and the server will save the provided transcript in the `logs` directory.
+Example: You can use this for save your Discord chat transcripts!
 
 ## Getting Started
 
